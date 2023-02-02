@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <h1>
+        <sup< /sup><span>Online Image Editor</span>
+    </h1>
+
+    <div class="container disable">
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label for="">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="contrast">Contrast</button>
+                        <button id="blurs">Blur</button>
+                        <button id="grayscale">Grayscale</button>
+                        <button id="saturate">Saturate</button>
+                        <button id="opacity">Opacity</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" min="0" max="200" value="100">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label for="">Rotate</label>
+                    <div class="options">
+                        <button id="left"><i class="fa fa-undo" aria-hidden="true"></i> </button>
+                        <button id="right"><i class="fa fa-repeat  " aria-hidden="true"></i> </button>
+                        <button id="vertical"> <box-icon name='reflect-vertical'></box-icon> </button>
+                        <button id="horizontal"> <box-icon name='reflect-horizontal'></box-icon> </button>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="preview-image">
+                <img src="placeholder.png" alt="">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-image"><box-icon name='reset'></box-icon> Reset Image</button>
+            <div class="row">
+                <input type="file" class="inp-file" accept="image/*">
+                <button class="choose-image"><box-icon name='image-add'></box-icon> Choose Image</button>
+                <button class="save-image"><box-icon name='save'></box-icon> Save Image</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
