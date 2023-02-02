@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e5a7ff;
+}
+
+h1{
+    position: absolute;
+    top: 1%; 
+    background-repeat: no-repeat; 
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+ 
+.container.disable :where(.editor-panel, .save-image, .reset-image){
+    opacity: 0.2;
+} 
+
+ 
+.container{
+    width: 800px;
+    background-color:#333;
+    padding: 30px;
+    box-shadow: 1px 1px 10px #00000052;
+}
+
+
+.editor-panel{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+
+.editor-panel .rotate{
+    margin-top: 15p;
+}
+
+.editor-panel .filter{
+
+}
+
+label{
+    margin-bottom: 5px;
+    display: block;
+    opacity: 0.4;
+}
+
+.filter-info{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.slider input{
+    margin-top: 5px;
+    width: 100%;
+    accent-color: #cc00ff;
+}
+
+.editor-panel .filter .options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.editor-panel .filter .options button{
+    width: calc(100% / 2 - 3px);
+    padding: 8px;
+    margin-top: 6px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+
+.editor-panel .filter .options button{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.rotate .options{   
+    display: flex;
+}
+
+.rotate .options button{
+ cursor: pointer;
+    width: calc(100% / 2 - 3px);
+    padding: 8px;
+    margin-top: 6px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+
+
+.editor-panel .filter .options button.active{
+    background-color: #cc00ff;
+    border-color: #cc00ff;
+    color: white; 
+    border-color: rgba(0,0,0,0.2);
+}
+
+
+.editor-panel .slider{
+    margin-top: 15p;
+}
+
+
+
+.wrapper{
+    display: flex;
+}
+
+    .controls{
+        display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.controls button{ 
+    border-color: rgba(0,0,0,0.2);
+    padding: 8px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: revert;
+    cursor: pointer;
+}
+
+.controls .row{
+    display: flex;
+}
+
+
+.save-image{
+    margin-left: 8px;
+}
+
+
+.preview-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+img{
+    width: 405px;
+    height: 350px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.row input{ 
+display: none;}
